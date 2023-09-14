@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HMH | Meditasi</title>
+  </head>
+  <body>
+    <audio id="audio-meditasi" loop>
+      <source src="../audio/Suara Relaksasi Penghilang Stres.mp3" type="audio/mpeg" />
+    </audio>
+
+    <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)" />
+
+    <script>
+      // Fungsi ini akan dijalankan saat halaman dimuat
+      window.load = function () {
+        var audio = document.getElementById("audio-meditasi");
+        audio.play(); // Memulai pemutaran audio secara otomatis
+      };
+
+      function changeVolume(volume) {
+        var audio = document.getElementById("audio-meditasi");
+        audio.volume = volume;
+      }
+    </script>
+  </body>
+</html>

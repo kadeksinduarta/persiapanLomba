@@ -1,0 +1,11 @@
+.menu-meditasi {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu-meditasi div {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+  }
+  
