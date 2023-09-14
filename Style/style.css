@@ -211,7 +211,6 @@ body {
 .Article .informasi-Article p {
   margin-top: 30px;
   font-size: 1.3rem;
-  width: 85%;
 }
 
 .Article .gambar {
@@ -305,6 +304,10 @@ footer {
   .card-Problem {
     margin: 0px 0;
   }
+
+  .card-Problem .card-1 {
+    width: 50%;
+  }
 }
 
 /* hp */
@@ -338,14 +341,18 @@ footer {
     transform: scalex(20%);
   }
 
+  .card-Problem .card-1 {
+    width: 60%;
+  }
+
   .Article,
   .meditasi {
     text-align: center;
     margin-top: 30px;
   }
 
-  .meditasi .informasi-meditasi,
-  .Article .informasi-Article {
+  .Article .informasi-Article,
+  .meditasi .informasi-meditasi {
     width: 100%;
   }
 
