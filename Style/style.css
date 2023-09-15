@@ -10,12 +10,12 @@
   --size-heading: 36px;
 
   /* font text di table */
-  --size-font-table: 14.5px;
-  --size-heading-table: 30px;
+  --size-font-table: 14px;
+  --size-heading-table: 29px;
 
   /* font text di table */
-  --size-font-hp: 13px;
-  --size-heading-hp: 27px;
+  --size-font-hp: 14px;
+  --size-heading-hp: 24px;
 }
 
 html {
@@ -307,8 +307,11 @@ footer {
     width: 100%;
   }
 
+  .card-Problem .card-1 h1 {
+    font-size: 20px;
+  }
+
   .home .informasi-utama h1,
-  .card-Problem .card-1 h1,
   .meditasi .informasi-meditasi h1,
   .Article .informasi-Article h1 {
     font-size: var(--size-heading-table);
@@ -344,11 +347,14 @@ footer {
   }
 
   .card-Problem .card-1 h1 {
-    font-size: var(--size-heading-hp);
+    font-size: 17px;
+  }
+
+  .card-Problem .card-1 p {
+    font-size: 12px;
   }
 
   .home .informasi-utama h1,
-  .card-Problem .card-1 h1,
   .meditasi .informasi-meditasi h1,
   .Article .informasi-Article h1 {
     font-size: var(--size-heading-hp);
@@ -361,7 +367,6 @@ footer {
   }
 
   .home .informasi-utama p,
-  .card-Problem .card-1 p,
   .meditasi .informasi-meditasi p,
   .Article .informasi-Article p {
     font-size: var(--size-font-hp);
