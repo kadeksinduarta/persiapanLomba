@@ -4,25 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HMH | Meditasi</title>
+
+    <link rel="stylesheet" href="../Style/meditasi-sejuk&tenang.css" />
   </head>
   <body>
-    <audio id="audio-meditasi" loop>
+    <audio id="audio-meditasi" controls autoplay>
       <source src="../audio/Suara Relaksasi Penghilang Stres.mp3" type="audio/mpeg" />
     </audio>
 
-    <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)" />
+    <div class="section-volume">
+      <label for="volumeRange">VOLUME</label>
+      <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)" />
+    </div>
 
+    <button id="button-audio">Pause</button>
+    <!-- link javascript -->
     <script>
-      // Fungsi ini akan dijalankan saat halaman dimuat
-      window.load = function () {
-        var audio = document.getElementById("audio-meditasi");
-        audio.play(); // Memulai pemutaran audio secara otomatis
-      };
+      const buttonAudio = document.getElementById("button-audio");
+      const audio = document.getElementById("audio-meditasi");
 
-      function changeVolume(volume) {
-        var audio = document.getElementById("audio-meditasi");
-        audio.volume = volume;
+      function changeVolume(value) {
+        audio.volume = parseFloat(value);
       }
+
+      buttonAudio.addEventListener("click", () => {
+        if (audio.paused) {
+          audio.play();
+          buttonAudio.innerHTML = "Pause";
+        } else {
+          audio.pause();
+          buttonAudio.innerHTML = "Play";
+        }
+      });
     </script>
   </body>
 </html>

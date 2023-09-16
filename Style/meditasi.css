@@ -1,11 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* border: 1px solid black; */
+}
+
+.container {
+  width: 100%;
+  padding: 0 6%;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.manfaat-meditasi {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.manfaat-meditasi li {
+  list-style: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+  position: relative;
+  margin: 10px 0;
+}
+
+.manfaat-meditasi-1 li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: calc(102%);
+  right: ;
+  bottom: 0;
+  background-image: url(../gambar/simbol.svg);
+  z-index: -1;
+}
+
+.manfaat-meditasi-2 li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: -8%;
+  right: 0;
+  bottom: 0;
+  background-image: url(../gambar/simbol.svg);
+  z-index: -1;
+}
+
+.manfaat-meditasi p {
+  font-size: 14px;
+}
+
+.manfaat-meditasi .manfaat-meditasi-1 {
+  text-align: right;
+  width: 38%;
+  order: 1;
+}
+
+.manfaat-meditasi .gambar {
+  order: 2;
+  position: relative;
+}
+
+.manfaat-meditasi .manfaat-meditasi-2 {
+  width: 38%;
+  order: 3;
+  text-align: left;
+}
+
+.manfaat-meditasi .gambar img {
+  width: 300px;
+  margin: 0 40px;
+  animation: meditasiAnimasi 3.5s linear infinite;
+}
+
+.manfaat-meditasi .gambar .element {
+  position: relative;
+}
+
 .menu-meditasi {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-meditasi .meditasi-1 .gambar-meditasi-1 {
+  background-image: url(../gambar/gambar-meditasi-1-Destop.svg);
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  filter: brightness(100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-meditasi .meditasi-1 .gambar-meditasi-1:hover {
+  filter: brightness(30%);
+  transform: scale(1.1);
+}
+
+.menu-meditasi .meditasi-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+#p1 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  bottom: -30px;
+  font-weight: bold;
+  left: 18%;
+  transition: all 0.3s ease-in-out;
+}
+
+.meditasi-1:hover #p1 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  bottom: 30px;
+  font-weight: bold;
+  left: 18%;
+}
+
+.menu-meditasi .meditasi-2 .gambar-meditasi-2 {
+  background-image: url(../gambar/gambar-meditasi-2-Destop.svg);
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  filter: brightness(100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-meditasi .meditasi-2 .gambar-meditasi-2:hover {
+  filter: brightness(30%);
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+.menu-meditasi .meditasi-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+#p2 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  bottom: -30px;
+  font-weight: bold;
+  left: 18%;
+  transition: all 0.3s ease-in-out;
+}
+
+.meditasi-2:hover #p2 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  bottom: 30px;
+  font-weight: bold;
+  /* left: 18%; */
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #d9d9d9;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .manfaat-meditasi {
+    flex-direction: column;
+    height: 100%;
   }
-  
-  .menu-meditasi div {
-    width: 250px;
-    height: 250px;
-    background-color: black;
+
+  .manfaat-meditasi .manfaat-meditasi-1 {
+    order: 2;
+    text-align: left;
+    width: 100%;
   }
-  
+
+  .manfaat-meditasi-1 li::before {
+    top: 0px;
+    left: -4%;
+  }
+
+  .manfaat-meditasi-2 li::before {
+    top: 0px;
+    left: -4%;
+  }
+
+  .manfaat-meditasi .gambar {
+    order: 1;
+  }
+
+  .manfaat-meditasi .manfaat-meditasi-2 {
+    width: 100%;
+    order: 3;
+  }
+
+  .menu-meditasi {
+    flex-direction: column;
+  }
+
+  .menu-meditasi .meditasi-1 .gambar-meditasi-1 {
+    background-image: url(../gambar/gambar-Meditasi-1.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+  }
+
+  .menu-meditasi .meditasi-2 .gambar-meditasi-2 {
+    background-image: url(../gambar/gambar-Meditasi-2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+  }
+
+  #p1 {
+    left: 27%;
+  }
+
+  .meditasi-1:hover #p1 {
+    left: 27%;
+  }
+
+  #p2 {
+    left: 27%;
+  }
+
+  .meditasi-1:hover #p2 {
+    left: 27% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .manfaat-meditasi li {
+    font-size: 16px;
+  }
+
+  .manfaat-meditasi-1 li::before {
+    top: 0px;
+    left: -6%;
+  }
+
+  .manfaat-meditasi-2 li::before {
+    top: 0px;
+    left: -6%;
+  }
+}
+
+/* animasi */
+@keyframes meditasiAnimasi {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Sesuaikan jarak pergerakan naik turun sesuai keinginan Anda */
+  }
+}
