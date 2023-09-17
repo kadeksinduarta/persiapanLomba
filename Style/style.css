@@ -47,9 +47,11 @@ body {
 }
 
 /* style Judul */
-.navbar .navbar-title p {
+.navbar .navbar-title a {
   font-size: 25px;
   font-weight: 700;
+  text-decoration: none;
+  color: var(--primary);
 }
 
 /* style Link */
@@ -121,7 +123,7 @@ body {
 /* style paragraf dari ketiga section */
 .home .informasi-utama p,
 .meditasi .informasi-meditasi p,
-.meditasi .informasi-Article p {
+.Article .informasi-Article p {
   margin-top: 15px;
   font-size: var(--size-font);
   width: 100%;
@@ -165,6 +167,22 @@ body {
   border-radius: 5px;
   text-decoration: none;
   color: #fff;
+  border: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.home .informasi-utama a:hover,
+.Article .informasi-Article a:hover,
+.meditasi .informasi-meditasi a:hover {
+  border: 3px solid var(--primary);
+  background-color: #fff;
+  color: var(--primary);
+}
+
+.home .informasi-utama a:active,
+.Article .informasi-Article a:active,
+.meditasi .informasi-meditasi a:active {
+  transform: scale(0.95);
 }
 
 /* style section card-problem */

@@ -12,6 +12,7 @@
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  padding: 0 4%;
 }
 
 .Meditasi-relaksasi-total {
@@ -21,6 +22,7 @@
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  padding: 0 4%;
 }
 
 body::before {
@@ -35,6 +37,39 @@ body::before {
   background-size: cover;
   animation: zoomInOut 8s infinite alternate;
   z-index: -1; /* Menempatkan lapisan di belakang konten */
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  /* background-color: #28cbff; */
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h1-di-meditasi-1 {
+  color: #d1a975;
+}
+
+.h1-di-meditasi-2 {
+  color: #dd8b64;
+}
+
+.back,
+.go-to {
+  color: #023d51;
+  font-size: 50px;
+  text-decoration: none;
+  /* display: inline-block; */
+  /* margin: 0 50px 0; */
+}
+
+.go-home {
+  font-size: 20px;
+  text-decoration: none;
+  color: #023d51;
+  font-weight: 700;
 }
 
 .section-volume {
