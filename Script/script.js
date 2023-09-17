@@ -1,4 +1,4 @@
-const navbarLink = document.querySelector(".navb zar-link");
+const navbarLink = document.querySelector(".navbar-link");
 const meditasi1 = document.getElementById("#meditasi1");
 const audioMeditasi1 = document.getElementById("#audio-meditasi");
 

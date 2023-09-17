@@ -5,15 +5,19 @@
   /* border: 1px solid black; */
 }
 
-#audio-meditasi {
-  position: absolute;
-  top: -100%;
-}
-
-body {
+.meditasi-mengatasi-stres {
   width: 100%;
   height: 100vh;
-  background-image: url(../gambar/bg-meditasi.svg);
+  background-image: url(../gambar/bg-meditasi-mengatasi-stres.svg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.Meditasi-relaksasi-total {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../gambar/bg-Meditasi-relaksasi-total.svg);
   background-position: center;
   background-size: cover;
   overflow: hidden;
