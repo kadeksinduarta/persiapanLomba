@@ -210,22 +210,6 @@ footer {
     height: 100px;
     margin: 10px auto;
   }
-
-  /* #p1 {
-    left: 27%;
-  }
-
-  .meditasi-1:hover #p1 {
-    left: 27%;
-  }
-
-  #p2 {
-    left: 27%;
-  }
-
-  .meditasi-1:hover #p2 {
-    left: 27% !important;
-  } */
 }
 
 @media (max-width: 500px) {
@@ -241,6 +225,12 @@ footer {
   .manfaat-meditasi-2 li::before {
     top: 0px;
     left: -6%;
+  }
+
+  .container .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
   }
 }
 

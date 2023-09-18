@@ -1,10 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font text di laptop */
+  --size-font: 18px;
+  --size-heading: 36px;
+
+  /* font text di table */
+  --size-font-table: 14px;
+  --size-heading-table: 30px;
+
+  /* font text di table */
+  --size-font-hp: 14px;
+  --size-heading-hp: 24px;
+}
+
+body .container {
+  padding: 0 6%;
+}
+
+.container .hero {
+  width: 100%;
+}
+
+.container .hero img {
+  display: block;
+  margin: 20px auto;
+  width: 95%;
+}
+
+.container .infomasi-detail {
+  margin-left: 50px;
+  width: 90%;
+}
+
+.container .infomasi-detail li {
+  margin: 20px 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .menu-article {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 
-.menu-article div {
+.isi-article {
   width: 250px;
-  height: 250px;
-  background-color: black;
+  padding: 10px;
+  height: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+
+.isi-article img {
+  width: 100%;
+}
+
+.isi-article .info h1 {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.isi-article .info p {
+  font-size: 13px;
+}
+
+.title {
+  text-align: center;
+  padding: 25px 0;
+  font-size: var(--size-heading-table);
+}
+
+.title-2 {
+  text-align: center;
+  margin: 50px 0 20px;
+  font-size: var(--size-heading-table);
+}
+
+p {
+  font-size: var(--size-font);
+}
+
+.p-center {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto 60px;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .p-center {
+    width: 90%;
+  }
+
+  .container .infomasi-detail {
+    margin-left: 30px;
+  }
+
+  .title {
+    font-size: var(--size-heading-hp);
+  }
+
+  .title-2 {
+    font-size: var(--size-heading-hp);
+  }
+
+  p,
+  .p-center {
+    font-size: var(--size-font-table);
+  }
+
+  .menu-article {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .p-center {
+    width: 100%;
+  }
+
+  .container .infomasi-detail {
+    margin-left: 15px;
+    width: 90%;
+  }
+
+  p,
+  .p-center {
+    font-size: var(--size-font-hp);
+  }
+
+  .isi-article {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .isi-article .gambar {
+    width: 30%;
+  }
+
+  .isi-article .info {
+    width: 70%;
+    padding: 0 10px;
+  }
+
+  .isi-article img {
+    width: 100%;
+  }
+
+  .isi-article .info h1 {
+    font-size: 10px;
+    padding: 3px 0;
+  }
+
+  .isi-article .info p {
+    font-size: 7px;
+  }
 }
