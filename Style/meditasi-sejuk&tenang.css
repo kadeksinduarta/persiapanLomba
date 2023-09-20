@@ -56,20 +56,22 @@ nav {
   color: #dd8b64;
 }
 
-.back,
-.go-to {
-  color: #023d51;
-  font-size: 50px;
+.back {
+  color: #513f02;
+  font-weight: bold;
+  font-size: 40px;
   text-decoration: none;
   /* display: inline-block; */
   /* margin: 0 50px 0; */
 }
 
-.go-home {
-  font-size: 20px;
-  text-decoration: none;
-  color: #023d51;
-  font-weight: 700;
+.back:hover {
+  color: #968a62;
+}
+
+.hiden,
+.go-to {
+  color: transparent;
 }
 
 .section-volume {

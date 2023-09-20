@@ -4,49 +4,175 @@
   box-sizing: border-box;
 }
 
+/* style container ketiga page halaman article */
 .container {
   width: 100%;
-  padding: 0 6%;
+  padding: 0 8%;
+  margin-bottom: 90px;
 }
 
+/* gambar di bagian atas di ketiga halaman article */
 .container .hero img {
   width: 100%;
+  transition: all 0.3s;
 }
 
+.container .hero img:hover {
+  width: 100%;
+  filter: brightness(40%);
+}
+
+/* judul di ketiga halaman article */
 .container h1 {
-  font-size: 29px;
-  margin: 10px 0;
+  font-size: 36px;
+  padding: 18px 0;
+  text-transform: capitalize;
+  line-height: 39px;
+  /* text-decoration: underline; */
 }
 
+/* sub judul/judul kedua dari halaman pertama */
+.container h2 {
+  font-size: 28px;
+  padding: 30px 0 10px;
+}
+
+/* paragraf di ketiga halaman article */
 .container p {
-  padding: 8px 10px;
-  font-size: 18px;
+  padding: 8px 0px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.container li {
-  margin: 8px 30px 0;
+/* li title di halaman ke tiga halaman */
+.container .li-title {
+  margin: 8px 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* list info di article halaman ke dua */
+.container .list-info {
+  padding-left: 0;
+  margin: 8px 25px 0;
+}
+
+/* li di article halaman ke dua */
+.container .list-info li {
+  list-style-type: disc;
   font-size: 20px;
+  padding: 8px 0;
+  line-height: 30px;
+}
+
+.container .list-info-article-3 li {
+  margin: 0px 19px 0;
+  line-height: 28px;
+  padding: 8px 0;
+  font-size: 20px;
+}
+
+.container .list-info-article-3 li span {
   font-weight: bold;
 }
 
+/* button di ketiga halaman article */
+.back {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  margin: 40px 0 0;
+  padding: 10px 20px;
+  background-color: #28cbff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 3px solid #28cbff;
+  transition: all 0.3s ease-in-out;
+}
+/* button di hover */
+.back:hover {
+  color: #28cbff;
+  background-color: #fff;
+}
+
+/* footer di ketiga halaman article */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #d9d9d9;
+}
+
+/* responsice */
+
 @media (max-width: 900px) {
+  /* menganti ukuran font dari judul di ketiga halaman article*/
   .container h1 {
     font-size: 23px;
+    padding: 10px 0;
   }
 
+  /* menganti ukuran font dari sub judul halaman ke pertama */
+  .container h2 {
+    font-size: 24px;
+  }
+
+  /* menganti ukuran font paragraf di ketiga halaman article */
   .container p {
-    font-size: 16px;
-    margin: 8px 0px 0;
+    font-size: 18px;
   }
 
-  .container li {
-    margin: 10px 0 0 20px;
-    font-size: 16px;
+  /* menganti ukuran bagian font list title di ketiga halaman article */
+
+  .container .li-title {
+    font-size: 20px;
+  }
+
+  /* menganti ukuran font li yang di dalam class list-info di halaman article ke dua */
+  .container .list-info li {
+    font-size: 18px;
+  }
+
+  .container .list-info-article-3 li {
+    font-size: 18px;
   }
 }
 
 @media (max-width: 500px) {
+  /* menganti ukuran font paragraf di ketiga halaman article */
   .container p {
-    font-size: 13px;
+    font-size: 15px;
+  }
+
+  /* menganti ukuran font judul di ketiga halaman article */
+  .container h1 {
+    font-size: 22px;
+    padding: 7px 0;
+  }
+
+  /* menganti ukuran font sub judul/judul kedua di ketiga halaman article */
+  .container h2 {
+    font-size: 20px;
+  }
+
+  /* menganti ukuran bagian font list title di ketiga halaman article */
+  .container .li-title {
+    font-size: 18px;
+  }
+
+  /* menganti ukuran font li yang di dalam class list-info di halaman article ke dua */
+  .container .list-info li {
+    font-size: 15px;
+  }
+
+  .container .list-info-article-3 li {
+    font-size: 15px;
+  }
+
+  .back {
+    font-size: 14px;
+    padding: 5px 15px;
+    margin: 30px 0 0;
   }
 }

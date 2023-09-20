@@ -52,22 +52,33 @@ body .container {
 .isi-article {
   width: 250px;
   padding: 10px;
-  height: 100%;
-  background-color: antiquewhite;
+  height: 340px;
+  background-color: #e1e1e1;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 
 .isi-article img {
   width: 100%;
 }
 
+.isi-article .info a {
+  text-decoration: none;
+}
+
 .isi-article .info h1 {
   font-size: 18px;
   padding: 10px 0;
+  color: #000;
+}
+
+.isi-article .info:hover {
+  text-decoration: underline;
 }
 
 .isi-article .info p {
+  color: #000;
   font-size: 13px;
 }
 
@@ -92,6 +103,12 @@ p {
   width: 70%;
   margin: 0 auto 60px;
   font-size: 20px;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #d9d9d9;
 }
 
 @media (max-width: 900px) {
@@ -141,8 +158,6 @@ p {
     width: 100%;
     padding: 10px;
     height: 100%;
-    background-color: antiquewhite;
-    display: flex;
     flex-direction: row;
   }
 

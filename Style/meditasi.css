@@ -88,10 +88,6 @@ h1 {
   animation: meditasiAnimasi 5s linear infinite;
 }
 
-.manfaat-meditasi .gambar .element {
-  position: relative;
-}
-
 .menu-meditasi {
   display: flex;
   justify-content: space-around;
@@ -213,6 +209,9 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .container {
+    padding: 0 6%;
+  }
   .manfaat-meditasi li {
     font-size: 16px;
   }
