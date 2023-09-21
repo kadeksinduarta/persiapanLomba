@@ -163,6 +163,10 @@ h1 {
   font-weight: bold;
 }
 
+.menu-meditasi a {
+  color: #fff;
+}
+
 /* style footer */
 footer {
   margin-top: 50px;
