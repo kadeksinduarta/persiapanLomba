@@ -96,7 +96,7 @@ body {
 
 /* style section home */
 .home {
-  margin-top: 150px;
+  margin-top: 130px;
   display: flex;
   padding: 0.7rem 6%;
   align-items: center;
@@ -139,22 +139,9 @@ body {
   width: 45%;
 }
 
-/* .home .gambar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 40px;
-  background-image: url("../gambar/bg_Before-bgUtama.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-} */
-
 /* menentukan ukuran dari gambar utama/hero dan menambahkan animasi style */
 .home .gambar img {
-  width: 80%;
+  width: 90%;
   animation: bgHome 3.5s linear infinite;
 }
 
@@ -236,7 +223,7 @@ footer {
 }
 
 /* ================= RESPONSIVE ===============*/
-/* tablet */
+
 @media (max-width: 900px) {
   /* mengubah display menu humberger yang awal nya none menjadi inline-block*/
   .navbar .Humberger {
@@ -252,7 +239,7 @@ footer {
     backdrop-filter: blur(5px);
     box-shadow: 0px 3px 5px rgba(10, 10, 10, 0.25);
     width: 100%;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
   /* style navbar link ketika ada class active */
@@ -274,7 +261,7 @@ footer {
 
   /* style section home */
   .home {
-    margin-top: 70px;
+    margin-top: 90px;
     flex-direction: column-reverse;
     text-align: center;
     justify-content: center;
@@ -326,6 +313,14 @@ footer {
 
 /* RESPONSIVE WIDTH 500PX */
 @media (max-width: 500px) {
+  .home .gambar {
+    width: 50%;
+  }
+
+  /* menentukan ukuran dari gambar utama/hero dan menambahkan animasi style */
+  .home .gambar img {
+    width: 100%;
+  }
   /* style card di dalam section card problem */
   .card-Problem .card-1 {
     width: 80%;
@@ -362,10 +357,12 @@ footer {
   }
 
   /* style text agar tengah-tengah pada section meditasi dan article */
+  /* margin top nya agar sama di ketiga section ini */
+  .card-Problem,
   .Article,
   .meditasi {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   /* mengatur ukuran div informasi/text pada section meditasi dan article */

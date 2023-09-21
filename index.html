@@ -13,27 +13,34 @@
     <!-- link father icon -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- link animasi aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- link css -->
     <link rel="stylesheet" href="Style/style.css" />
   </head>
   <body>
     <!-- navbar start -->
     <nav class="navbar">
+      <!-- div title di halaman utama -->
       <div class="navbar-title">
         <a href="#Home">HMH</a>
       </div>
 
+      <!-- div untuk membungkus link -->
       <div class="navbar-link">
         <a href="#Home">home</a>
         <a href="#Meditasi">Meditasi</a>
         <a href="#Article">Article</a>
       </div>
+      <!-- menu humberger  -->
       <span class="Humberger" id="menu"><i data-feather="menu"></i></span>
     </nav>
 
     <!-- hero/main -->
     <section class="home" id="Home">
-      <div class="informasi-utama">
+      <!-- informasi utama di halaman -->
+      <div class="informasi-utama" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="450">
         <h1>
           Selamat Datang Di <br />
           <span>Happy Mental Healt</span>
@@ -44,12 +51,16 @@
         </p>
         <a href="#Meditasi">explore</a>
       </div>
+
+      <!-- gambar utama di halaman -->
       <div class="gambar">
         <img src="gambar/gbrUtama.svg" alt="gambar-utama" />
       </div>
     </section>
+    <!-- akhir section utama/home -->
+    <!--  -->
     <!-- card-problem -->
-    <section class="card-Problem">
+    <section class="card-Problem" data-aos="fade-up" data-aos-duration="900" data-aos-delay="150">
       <div class="card-1">
         <h1>Manurut Indonesia-National Adolescent Mental Health Survey</h1>
         <p>
@@ -58,12 +69,17 @@
         </p>
       </div>
     </section>
+    <!-- akhir section card problem -->
+    <!--  -->
     <!-- fitur meditasi -->
     <section class="meditasi" id="Meditasi">
-      <div class="gambar">
+      <!-- div gambar meditasi -->
+      <div class="gambar" data-aos="fade-up-right" data-aos-duration="900" data-aos-delay="150">
         <img src="gambar/gambar-meditasi-di-halaman-utama.svg" alt="" />
       </div>
-      <div class="informasi-meditasi">
+
+      <!-- div informasi utama meditasi -->
+      <div class="informasi-meditasi" data-aos="fade-left" data-aos-duration="900" data-aos-delay="300">
         <h1>Mulai Meditasi <br /><span>Sehatkan Pikiran Anda!</span></h1>
         <p>
           Ayo meditasi dan relexs kan pikian anda,ini akan membantu Anda mencapai kesehatan mental yang optimal melalui meditasi. Meditasi adalah kunci untuk mencapai ketenangan, kejernihan pikiran, dan kebahagiaan yang berkelanjutan.
@@ -72,9 +88,12 @@
         <a href="Page/meditasi.html" target="_blank">detail</a>
       </div>
     </section>
+    <!-- akhir section meditasi -->
+    <!--  -->
     <!-- section article -->
     <section class="Article" id="Article">
-      <div class="informasi-Article">
+      <!-- informasi utama article -->
+      <div class="informasi-Article" data-aos="fade-right" data-aos-duration="900" data-aos-delay="300">
         <h1>Baca Artikel <br /><span>Jaga Kesehatan Pikiran Anda.</span></h1>
         <p>
           Jelajahi artikel kami untuk wawasan dan panduan praktis tentang menjaga kesehatan mental. Dalam artikel-artikel ini, Anda akan menemukan tips untuk mengelola stres, meningkatkan tidur, dan membangun ketahanan mental. Temukan
@@ -82,8 +101,13 @@
         </p>
         <a href="Page/article.html" target="_blank">detail</a>
       </div>
-      <div class="gambar"><img src="gambar/gambar-article-di-halaman-utama.svg" alt="gambar-utama" /></div>
+
+      <!-- div gambar article -->
+      <div class="gambar" data-aos="fade-up-left" data-aos-duration="900" data-aos-delay="150">
+        <img src="gambar/gambar-article-di-halaman-utama.svg" alt="gambar-utama" />
+      </div>
     </section>
+    <!-- akhir section article -->
 
     <!-- footer -->
     <footer>
@@ -93,6 +117,12 @@
     <!-- script feather icon -->
     <script>
       feather.replace();
+    </script>
+
+    <!-- script animasi aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
     <!-- link javascript -->

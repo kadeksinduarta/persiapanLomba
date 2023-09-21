@@ -3,49 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
     <title>HMH | Meditasi Mengatasi Stres</title>
 
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet" />
+
+    <!-- link style css -->
     <link rel="stylesheet" href="../Style/halaman-meditasi.css" />
   </head>
+
+  <!-- pembungkus utama dari halaman + bg gambar nya juga di sini-->
   <body class="meditasi-mengatasi-stres">
+    <!-- nav ini untuk ngisi judul dan link back ke halamanan meditasi -->
     <nav>
       <a href="meditasi.html" class="back">&#60;</a>
       <h1 class="h1-di-meditasi-2">Meditasi Mengatasi Stres</h1>
       <p class="hidden"></p>
     </nav>
+
+    <!-- autio ini saya sembunyikan supa tidak kelihatan -->
     <audio id="audio-meditasi" autoplay loop>
+      <!-- saya menggunakan link, audio ini saya simpan di wordpress -->
       <source src="https://dev-pastiundangankuy.pantheonsite.io/wp-content/uploads/2023/09/audioMeditasi-mengatasi-stres.mp3" type="audio/mpeg" />
     </audio>
 
-    <div class="section-volume">
+    <!-- div mengatur volume -->
+    <div class="volume">
       <label for="volumeRange">VOLUME</label>
+
+      <!-- input bertipy renge untuk mengatur volume -->
       <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)" />
     </div>
 
+    <!-- button untuk pause dan play -->
     <button id="button-audio">Pause</button>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
     <!-- link javascript -->
-    <script>
-      const buttonAudio = document.getElementById("button-audio");
-      const audio = document.getElementById("audio-meditasi");
-      const audioMeditasi1 = document.getElementById("#audio-meditasi");
-
-      function changeVolume(value) {
-        audio.volume = parseFloat(value);
-      }
-
-      buttonAudio.addEventListener("click", () => {
-        if (audio.paused) {
-          audio.play();
-          buttonAudio.innerHTML = "Pause";
-        } else {
-          audio.pause();
-          buttonAudio.innerHTML = "Play";
-        }
-      });
-
-      meditasi1.addEventListener("click", () => {
-        audioMeditasi1.play();
-      });
-    </script>
+    <script src="../Script/scrip-meditasi.js"></script>
   </body>
 </html>

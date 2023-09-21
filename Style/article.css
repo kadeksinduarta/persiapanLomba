@@ -4,48 +4,82 @@
   box-sizing: border-box;
 }
 
+/* membuat variabel */
 :root {
   /* font text di laptop */
   --size-font: 17px;
   --size-heading: 30px;
 
-  /* font text di table */
+  /* font text di hp */
   --size-font-hp: 14px;
   --size-heading-hp: 24px;
 }
 
-body .container {
+/* style container  */
+.container {
   padding: 0 6%;
   font-family: "Roboto", sans-serif;
 }
 
+/* style width hero/pembungkus gambar utama */
 .container .hero {
   width: 100%;
 }
 
+/* style menentukan ukuran gambar */
 .container .hero img {
   display: block;
   margin: 20px auto;
   width: 95%;
 }
 
+/* style menentukan ukuran class informasi-detail */
 .container .infomasi-detail {
   margin-left: 50px;
   width: 90%;
 }
 
+.container .title {
+  text-align: center;
+  padding: 25px 0;
+  font-size: var(--size-heading);
+}
+
+/* style li yang di bungkus di class informasi-detail */
 .container .infomasi-detail li {
   margin: 20px 0 10px;
   font-size: 20px;
   font-weight: bold;
 }
 
+/* style semua paragraf / semua tag p di halaman article.html */
+p {
+  font-size: var(--size-font);
+  color: #1f1f1f;
+}
+
+/* style title ke dua/sub judul */
+.container .infomasi-detail .title-2 {
+  text-align: center;
+  margin: 50px 0 20px;
+  font-size: var(--size-heading);
+}
+
+/* style tag p yang isi class p-centar */
+.p-center {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto 60px;
+}
+
+/* style menu article */
 .menu-article {
   display: flex;
   justify-content: space-around;
   margin-bottom: 50px;
 }
 
+/* style column/class isi-article yang di bungkus menu article */
 .isi-article {
   width: 250px;
   padding: 10px;
@@ -56,102 +90,87 @@ body .container {
   border-radius: 5px;
 }
 
+/* style gambar yang tersimpan di column/isi-article */
 .isi-article img {
   width: 100%;
 }
 
+/* menghilangkan garis bawah pada tag a yang di bungkus dengan class info*/
 .isi-article .info a {
   text-decoration: none;
 }
 
+/* style heading yang di bungkus di class info */
 .isi-article .info h1 {
   font-size: 16px;
   padding: 10px 0;
   color: #000;
 }
 
+/* menamahkan garis bawah ketika menghover div yang berisi class info */
 .isi-article .info:hover {
   text-decoration: underline;
 }
 
+/* style p yang ada di dalam class info */
 .isi-article .info p {
   color: #232323;
   font-size: 12px;
 }
 
-.title {
-  text-align: center;
-  padding: 25px 0;
-  font-size: var(--size-heading);
-}
-
-.title-2 {
-  text-align: center;
-  margin: 50px 0 20px;
-  font-size: var(--size-heading);
-}
-
-p {
-  font-size: var(--size-font);
-  color: #1f1f1f;
-}
-
-.p-center {
-  text-align: center;
-  width: 70%;
-  margin: 0 auto 60px;
-  font-size: var(--size-font);
-}
-
+/* style footer */
 footer {
   padding: 20px 0;
   text-align: center;
   background-color: #d9d9d9;
 }
 
+/* ================= RESPONSIVE ===============*/
+/*  */
+/* di ukuran 900px */
 @media (max-width: 900px) {
-  .p-center {
-    width: 90%;
-  }
-
+  /* mengubah yang awal nya margin-left nya 50px menjadi 30px */
   .container .infomasi-detail {
     margin-left: 30px;
   }
 
-  .title {
+  /* mengubah ukuran font dari kedua title ini*/
+  .container .title,
+  .container .infomasi-detail .title-2 {
     font-size: var(--size-heading-hp);
   }
 
-  .title-2 {
-    font-size: var(--size-heading-hp);
-  }
-
-  p,
+  /* mengubah ukuran p-center nya yang sebelum nya 70% */
   .p-center {
-    font-size: var(--size-font);
+    width: 90%;
   }
 
+  /* ngasi style flex wrap supaya layout nya menyesuaikan dengan ukuran window nya dan mengasi gap/jarak sebesar 20px */
   .menu-article {
     flex-wrap: wrap;
     gap: 20px;
   }
 }
 
+/* di ukuran 500px */
 @media (max-width: 500px) {
-  .p-center {
-    width: 100%;
-  }
-
   .container .infomasi-detail {
     margin-left: 15px;
     width: 90%;
   }
 
+  /* mengubah width dari 90% ke 100% */
+  .p-center {
+    width: 100%;
+  }
+
+  /* mengubah ukuran font */
   p,
   .p-center {
     font-size: var(--size-font-hp);
   }
 
+  /* style isi-article */
   .isi-article {
     width: 100%;
     padding: 10px;
@@ -159,24 +178,29 @@ footer {
     flex-direction: row;
   }
 
+  /* style div yang isi class gambar */
   .isi-article .gambar {
     width: 30%;
   }
 
+  /* style div yang isi class info */
   .isi-article .info {
     width: 70%;
     padding: 0 10px;
   }
 
+  /* style ukuran gambar yang ada di dalam div isi-article */
   .isi-article img {
     width: 100%;
   }
 
+  /* style h1 yang ada di class isi-article */
   .isi-article .info h1 {
     font-size: 10px;
     padding: 3px 0;
   }
 
+  /* style p yang ada di class isi-article */
   .isi-article .info p {
     font-size: 7px;
   }

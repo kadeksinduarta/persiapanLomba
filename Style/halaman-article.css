@@ -18,6 +18,7 @@
   transition: all 0.3s;
 }
 
+/* gambar hero dari article ketika di hover */
 .container .hero img:hover {
   width: 100%;
   filter: brightness(40%);
@@ -29,10 +30,9 @@
   padding: 18px 0;
   text-transform: capitalize;
   line-height: 39px;
-  /* text-decoration: underline; */
 }
 
-/* sub judul/judul kedua dari halaman pertama */
+/* sub judul/judul kedua dari halaman pertama dan halaman ketiga*/
 .container h2 {
   font-size: 28px;
   padding: 30px 0 10px;
@@ -47,7 +47,7 @@
   font-weight: 400;
 }
 
-/* li title di halaman ke tiga halaman */
+/* style li title di halaman halaman pertama dan halaman kedua */
 .container .li-title {
   margin: 8px 20px 0;
   font-size: 24px;
@@ -71,7 +71,8 @@
   font-weight: 400;
 }
 
-.container .list-info-article-3 li {
+/* li di article halaman ke 3 */
+.container .informasi-article-3 .list-info-article-3 li {
   margin: 0px 19px 0;
   line-height: 28px;
   padding: 8px 0;
@@ -80,7 +81,8 @@
   font-weight: 400;
 }
 
-.container .list-info-article-3 li span {
+/* style li yang isi tag span di article halaman ke 3 */
+.container .informasi-article-3 .list-info-article-3 li span {
   font-weight: bold;
 }
 
@@ -98,6 +100,7 @@
   border: 3px solid #28cbff;
   transition: all 0.3s ease-in-out;
 }
+
 /* button di hover */
 .back:hover {
   color: #28cbff;
@@ -111,8 +114,10 @@ footer {
   background-color: #d9d9d9;
 }
 
-/* responsice */
-
+/* ================= RESPONSIVE ===============*/
+/*  */
+/*  */
+/* ukuran 900px */
 @media (max-width: 900px) {
   /* menganti ukuran font dari judul di ketiga halaman article*/
   .container h1 {
@@ -120,7 +125,7 @@ footer {
     padding: 10px 0;
   }
 
-  /* menganti ukuran font dari sub judul halaman ke pertama */
+  /* menganti ukuran font dari sub judul halaman ke pertama dan ketiga */
   .container h2 {
     font-size: 24px;
   }
@@ -130,8 +135,7 @@ footer {
     font-size: 18px;
   }
 
-  /* menganti ukuran bagian font list title di ketiga halaman article */
-
+  /* menganti ukuran bagian font list title di halaman pertama dan kedua */
   .container .li-title {
     font-size: 20px;
   }
@@ -141,11 +145,13 @@ footer {
     font-size: 18px;
   }
 
+  /* menganti ukurna font li yang di halaman ke tiga */
   .container .list-info-article-3 li {
     font-size: 18px;
   }
 }
 
+/* ukuran 500px */
 @media (max-width: 500px) {
   /* menganti ukuran font paragraf di ketiga halaman article */
   .container p {
@@ -160,12 +166,12 @@ footer {
     line-height: 25px;
   }
 
-  /* menganti ukuran font sub judul/judul kedua di ketiga halaman article */
+  /* menganti ukuran font dari sub judul halaman ke pertama dan ketiga */
   .container h2 {
     font-size: 20px;
   }
 
-  /* menganti ukuran bagian font list title di ketiga halaman article */
+  /* menganti ukuran bagian font list title di halaman pertama dan kedua */
   .container .li-title {
     font-size: 18px;
   }
@@ -175,10 +181,12 @@ footer {
     font-size: 15px;
   }
 
+  /* menganti ukurna font li yang di halaman ke tiga */
   .container .list-info-article-3 li {
     font-size: 15px;
   }
 
+  /* style button di ketiga halaman article */
   .back {
     font-size: 14px;
     padding: 5px 15px;

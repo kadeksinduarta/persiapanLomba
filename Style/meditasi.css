@@ -1,11 +1,12 @@
+/* meresert margin padding di semua elemen di halaman meditasi*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /* border: 1px solid black; */
 }
 
+/* style container/pembungkus dari semua element/item di halaman meditasi */
 .container {
   width: 100%;
   padding: 0 6%;
@@ -13,6 +14,7 @@
   font-weight: 400;
 }
 
+/* style tag h1 di halaman meditasi */
 h1 {
   text-align: center;
   margin: 30px 0;
@@ -20,6 +22,7 @@ h1 {
   text-transform: capitalize;
 }
 
+/* style div class manfaat meditasi */
 .manfaat-meditasi {
   width: 100%;
   display: flex;
@@ -28,6 +31,7 @@ h1 {
   align-items: center;
 }
 
+/* style li yang ada di class manfaat-meditasi */
 .manfaat-meditasi li {
   list-style: none;
   font-size: 18px;
@@ -37,6 +41,7 @@ h1 {
   margin: 20px 0 10px;
 }
 
+/* menambahkan element/gambar kecil di sebelah li */
 .manfaat-meditasi-1 li::before {
   content: "";
   position: absolute;
@@ -50,6 +55,7 @@ h1 {
   z-index: -1;
 }
 
+/* menambahkan element/gambar kecil di sebelah li */
 .manfaat-meditasi-2 li::before {
   content: "";
   position: absolute;
@@ -63,43 +69,51 @@ h1 {
   z-index: -1;
 }
 
+/* style p yang  */
 .manfaat-meditasi p {
   font-size: 13px;
 }
 
+/* style .class manfaat meditasi 1/column 1 */
 .manfaat-meditasi .manfaat-meditasi-1 {
   text-align: right;
   width: 38%;
   order: 1;
 }
 
+/* style .class gambar/column 2 */
 .manfaat-meditasi .gambar {
   order: 2;
   position: relative;
 }
 
+/* style .class manfaat-meditasi-2/column 3 */
 .manfaat-meditasi .manfaat-meditasi-2 {
   width: 38%;
   order: 3;
   text-align: left;
 }
 
+/* style gambar yang ada di class gambar */
 .manfaat-meditasi .gambar img {
   width: 300px;
   margin: 0 40px;
   animation: meditasiAnimasi 5s linear infinite;
 }
 
+/* style menu meditasi */
 .menu-meditasi {
   display: flex;
   justify-content: space-around;
 }
 
+/* style column di menu meditasi */
 .menu-meditasi .meditasi-2,
 .menu-meditasi .meditasi-1 {
   position: relative;
 }
 
+/* style class meditasi-1 dengan menambahkan gambar dengan beberapa properti */
 .menu-meditasi .meditasi-1 .gambar-meditasi-1 {
   background-image: url(../gambar/gambar-meditasi-1-Destop.svg);
   width: 250px;
@@ -115,6 +129,7 @@ h1 {
   box-shadow: 0px 0px 5px black;
 }
 
+/* style class meditasi-2 dengan menambahkan gambar dengan beberapa properti */
 .menu-meditasi .meditasi-2 .gambar-meditasi-2 {
   background-image: url(../gambar/gambar-meditasi-2-Destop.svg);
   width: 250px;
@@ -130,13 +145,15 @@ h1 {
   box-shadow: 0px 0px 5px black;
 }
 
+/* style .gambar-meditasi-1&2 ketika di hover */
 .menu-meditasi .meditasi-1 .gambar-meditasi-1:hover,
 .menu-meditasi .meditasi-2 .gambar-meditasi-2:hover {
   filter: brightness(100%);
 }
 
-#p2,
-#p1 {
+/* style judul dari meditasi */
+.p2,
+.p1 {
   position: absolute;
   color: #fff;
   font-size: 17px;
@@ -146,6 +163,7 @@ h1 {
   font-weight: bold;
 }
 
+/* style footer */
 footer {
   margin-top: 50px;
   padding: 20px 0;
@@ -153,42 +171,52 @@ footer {
   background-color: #d9d9d9;
 }
 
-/* responsive */
+/* ================= RESPONSIVE ===============*/
+/*  */
+/*  */
+/* di ukurna 900pc */
 @media (max-width: 900px) {
+  /* mengubah yang menjadi column atau ke bawah */
   .manfaat-meditasi {
     flex-direction: column;
     height: 100%;
   }
 
+  /* menganti posisi letak yang awal nya di older 1 menjadi 2  */
   .manfaat-meditasi .manfaat-meditasi-1 {
     order: 2;
     text-align: left;
     width: 100%;
   }
 
+  /* style mengeser simbol/element gambar kecil */
   .manfaat-meditasi-1 li::before {
     top: 0px;
     left: -4%;
   }
 
+  /* style mengeser simbol/element gambar kecil */
   .manfaat-meditasi-2 li::before {
     top: 0px;
     left: -4%;
   }
 
+  /* menganti posisi letak yang awal nya di older 2 menjadi 1 */
   .manfaat-meditasi .gambar {
     order: 1;
   }
 
+  /* mengubah ukuran width nya, engak ikut merubah posisi letak karena div ini yang paling terakhir */
   .manfaat-meditasi .manfaat-meditasi-2 {
     width: 100%;
-    order: 3;
   }
 
+  /* mengubah flex yang awal nya row/kesamping menjadi ke bawah/column */
   .menu-meditasi {
     flex-direction: column;
   }
 
+  /* menganti gambar meditasi 1 */
   .menu-meditasi .meditasi-1 .gambar-meditasi-1 {
     background-image: url(../gambar/gambar-Meditasi-1-mobile.svg);
     background-position: center;
@@ -199,6 +227,7 @@ footer {
     margin: 10px auto;
   }
 
+  /* menganti gambar meditasi 2 */
   .menu-meditasi .meditasi-2 .gambar-meditasi-2 {
     background-image: url(../gambar/gambar-Meditasi-2-mobile.svg);
     background-position: center;
@@ -210,32 +239,27 @@ footer {
   }
 }
 
+/* di ukuran 500 */
 @media (max-width: 500px) {
-  .container {
-    padding: 0 6%;
-  }
+  /* style li yang berada di class manfaat-meditasi */
   .manfaat-meditasi li {
-    font-size: 16px;
+    font-size: 15px;
   }
 
+  /* style mengeser simbol/element gambar kecil */
   .manfaat-meditasi-1 li::before {
     top: 0px;
     left: -6%;
   }
 
+  /* style mengeser simbol/element gambar kecil */
   .manfaat-meditasi-2 li::before {
     top: 0px;
     left: -6%;
   }
-
-  .container .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-  }
 }
 
-/* animasi */
+/* animasi untuk gambar meditasi di halaman meditasi*/
 @keyframes meditasiAnimasi {
   0%,
   100% {
