@@ -9,6 +9,8 @@
 .container {
   width: 100%;
   padding: 0 6%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -32,7 +34,7 @@ h1 {
   text-transform: capitalize;
   font-weight: bold;
   position: relative;
-  margin: 10px 0;
+  margin: 20px 0 10px;
 }
 
 .manfaat-meditasi-1 li::before {
@@ -62,7 +64,7 @@ h1 {
 }
 
 .manfaat-meditasi p {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .manfaat-meditasi .manfaat-meditasi-1 {
@@ -188,7 +190,7 @@ footer {
   }
 
   .menu-meditasi .meditasi-1 .gambar-meditasi-1 {
-    background-image: url(../gambar/gambar-Meditasi-1.svg);
+    background-image: url(../gambar/gambar-Meditasi-1-mobile.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -198,7 +200,7 @@ footer {
   }
 
   .menu-meditasi .meditasi-2 .gambar-meditasi-2 {
-    background-image: url(../gambar/gambar-Meditasi-2.svg);
+    background-image: url(../gambar/gambar-Meditasi-2-mobile.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

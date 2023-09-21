@@ -6,12 +6,8 @@
 
 :root {
   /* font text di laptop */
-  --size-font: 18px;
-  --size-heading: 36px;
-
-  /* font text di table */
-  --size-font-table: 14px;
-  --size-heading-table: 30px;
+  --size-font: 17px;
+  --size-heading: 30px;
 
   /* font text di table */
   --size-font-hp: 14px;
@@ -20,6 +16,7 @@
 
 body .container {
   padding: 0 6%;
+  font-family: "Roboto", sans-serif;
 }
 
 .container .hero {
@@ -68,7 +65,7 @@ body .container {
 }
 
 .isi-article .info h1 {
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 0;
   color: #000;
 }
@@ -78,31 +75,32 @@ body .container {
 }
 
 .isi-article .info p {
-  color: #000;
-  font-size: 13px;
+  color: #232323;
+  font-size: 12px;
 }
 
 .title {
   text-align: center;
   padding: 25px 0;
-  font-size: var(--size-heading-table);
+  font-size: var(--size-heading);
 }
 
 .title-2 {
   text-align: center;
   margin: 50px 0 20px;
-  font-size: var(--size-heading-table);
+  font-size: var(--size-heading);
 }
 
 p {
   font-size: var(--size-font);
+  color: #1f1f1f;
 }
 
 .p-center {
   text-align: center;
   width: 70%;
   margin: 0 auto 60px;
-  font-size: 20px;
+  font-size: var(--size-font);
 }
 
 footer {
@@ -130,7 +128,7 @@ footer {
 
   p,
   .p-center {
-    font-size: var(--size-font-table);
+    font-size: var(--size-font);
   }
 
   .menu-article {

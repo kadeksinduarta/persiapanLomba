@@ -13,6 +13,7 @@
   background-size: cover;
   overflow: hidden;
   padding: 0 4%;
+  font-family: "Roboto", sans-serif;
 }
 
 .Meditasi-relaksasi-total {
@@ -23,6 +24,7 @@
   background-size: cover;
   overflow: hidden;
   padding: 0 4%;
+  font-family: "Roboto", sans-serif;
 }
 
 body::before {

@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HMH | Meditasi</title>
+    <title>HMH | Meditasi Mengatasi Stres</title>
 
-    <link rel="stylesheet" href="../Style/meditasi-sejuk&tenang.css" />
+    <link rel="stylesheet" href="../Style/halaman-meditasi.css" />
   </head>
   <body class="meditasi-mengatasi-stres">
     <nav>
       <a href="meditasi.html" class="back">&#60;</a>
-      <h1 class="h1-di-meditasi-2">Meditasi Relaksasi Total</h1>
+      <h1 class="h1-di-meditasi-2">Meditasi Mengatasi Stres</h1>
       <p class="hidden"></p>
     </nav>
     <audio id="audio-meditasi" autoplay loop>
@@ -27,6 +27,7 @@
     <script>
       const buttonAudio = document.getElementById("button-audio");
       const audio = document.getElementById("audio-meditasi");
+      const audioMeditasi1 = document.getElementById("#audio-meditasi");
 
       function changeVolume(value) {
         audio.volume = parseFloat(value);
@@ -40,6 +41,10 @@
           audio.pause();
           buttonAudio.innerHTML = "Play";
         }
+      });
+
+      meditasi1.addEventListener("click", () => {
+        audioMeditasi1.play();
       });
     </script>
   </body>

@@ -9,6 +9,7 @@
   width: 100%;
   padding: 0 8%;
   margin-bottom: 90px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* gambar di bagian atas di ketiga halaman article */
@@ -40,8 +41,10 @@
 /* paragraf di ketiga halaman article */
 .container p {
   padding: 8px 0px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
+  color: #242424;
+  font-weight: 400;
 }
 
 /* li title di halaman ke tiga halaman */
@@ -61,16 +64,20 @@
 /* li di article halaman ke dua */
 .container .list-info li {
   list-style-type: disc;
-  font-size: 20px;
+  font-size: 18px;
   padding: 8px 0;
   line-height: 30px;
+  color: #242424;
+  font-weight: 400;
 }
 
 .container .list-info-article-3 li {
   margin: 0px 19px 0;
   line-height: 28px;
   padding: 8px 0;
-  font-size: 20px;
+  font-size: 18px;
+  color: #242424;
+  font-weight: 400;
 }
 
 .container .list-info-article-3 li span {
@@ -143,12 +150,14 @@ footer {
   /* menganti ukuran font paragraf di ketiga halaman article */
   .container p {
     font-size: 15px;
+    line-height: 25px;
   }
 
   /* menganti ukuran font judul di ketiga halaman article */
   .container h1 {
     font-size: 22px;
     padding: 7px 0;
+    line-height: 25px;
   }
 
   /* menganti ukuran font sub judul/judul kedua di ketiga halaman article */
