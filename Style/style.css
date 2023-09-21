@@ -28,8 +28,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
-  width: 100vh;
-  overflow: hidden;
+  width: 100vw;
 }
 
 /* AWAL style navbar */
